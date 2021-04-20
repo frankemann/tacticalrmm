@@ -18,7 +18,7 @@
     
     
       
-        <title>Updating the RMM - Tactical RMM Documentation</title>
+        <title>Code Signing - Tactical RMM Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#updating-the-rmm" class="md-skip">
+        <a href="#code-signing" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Updating the RMM
+              Code Signing
             
           </span>
         </div>
@@ -231,11 +231,49 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../code_signing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Code Signing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Code Signing
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-it-work" class="md-nav__link">
+    How does it work?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -315,14 +353,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
         Updating
@@ -338,63 +374,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Updating the RMM
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../update_server/" class="md-nav__link">
         Updating the RMM
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#keeping-your-linux-server-up-to-date" class="md-nav__link">
-    Keeping your linux server up to date
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-to-the-latest-rmm-version" class="md-nav__link">
-    Updating to the latest RMM version
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keeping-your-lets-encrypt-certificate-up-to-date" class="md-nav__link">
-    Keeping your Let's Encrypt certificate up to date
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -727,22 +711,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#keeping-your-linux-server-up-to-date" class="md-nav__link">
-    Keeping your linux server up to date
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-to-the-latest-rmm-version" class="md-nav__link">
-    Updating to the latest RMM version
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keeping-your-lets-encrypt-certificate-up-to-date" class="md-nav__link">
-    Keeping your Let's Encrypt certificate up to date
+  <a href="#how-does-it-work" class="md-nav__link">
+    How does it work?
   </a>
   
 </li>
@@ -760,55 +730,17 @@
               
                 
                 
-                <h1 id="updating-the-rmm">Updating the RMM<a class="headerlink" href="#updating-the-rmm" title="Permanent link">&para;</a></h1>
-<h4 id="keeping-your-linux-server-up-to-date">Keeping your linux server up to date<a class="headerlink" href="#keeping-your-linux-server-up-to-date" title="Permanent link">&para;</a></h4>
-<p>You should periodically run <code>sudo apt update</code> and <code>sudo apt -y upgrade</code> to keep your server up to date.</p>
-<p>Other than this, you should avoid making any changes to your server and let the <code>update.sh</code> script handle everything else for you.</p>
-<h4 id="updating-to-the-latest-rmm-version">Updating to the latest RMM version<a class="headerlink" href="#updating-to-the-latest-rmm-version" title="Permanent link">&para;</a></h4>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>Do <strong>not</strong> attempt to manually edit the update script or any configuration files unless specifically told to by one of the developers.<br/><br/>
-Since this software is completely self hosted and we have no access to your server, we have to assume you have not made any config changes to any of the files or services on your server, and the update script will assume this.<br/><br/>
-You should also <strong>never</strong> attempt to automate running the update script via cron.<br/><br/>
-The update script will update itself if needed to the latest version when you run it, and them prompt you to run it again.<br/><br/>
-Sometimes, manual intervention will be required during an update in the form of yes/no prompts, so attempting to automate this will ignore these prompts and cause your installation to break.</p>
-</div>
-<p>SSH into your server as the linux user you created during install.<br/><br/>
-<strong>Never</strong> run any update scripts or commands as the <code>root</code> user.<br/>This will mess up permissions and break your installation.<br/><br/>
-Download the update script and run it:<br/></p>
-<div class="codehilite"><pre><span></span><code>wget -N https://raw.githubusercontent.com/wh1te909/tacticalrmm/master/update.sh
-chmod +x update.sh
-./update.sh
-</code></pre></div>
-
-<p><br/></p>
-<p>If you are already on the latest version, the update script will notify you of this and return immediately.<br/><br/>
-You can pass the optional <code>--force</code> flag to the update script to forcefully run through an update, which will bypass the check for latest version.<br/></p>
-<div class="codehilite"><pre><span></span><code>./update.sh --force
-</code></pre></div>
-
-<p>This is usefull for a botched update that might have not completed fully.<br/><br/>
-The update script will also fix any permissions that might have gotten messed up during a botched update, or if you accidentally ran the update script as the <code>root</code> user.</p>
-<p><br/></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do <strong>not</strong> attempt to manually update MeshCentral to a newer version.</p>
-<p>You should let the <code>update.sh</code> script handle this for you. </p>
-<p>The developers will test MeshCentral and make sure integration does not break before bumping the mesh version.</p>
-</div>
-<h4 id="keeping-your-lets-encrypt-certificate-up-to-date">Keeping your Let's Encrypt certificate up to date<a class="headerlink" href="#keeping-your-lets-encrypt-certificate-up-to-date" title="Permanent link">&para;</a></h4>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Currently, the update script does not automatically renew your Let's Encrypt wildcard certificate, which expires every 3 months, since this is non-trivial to automate using the DNS TXT record method.</p>
-</div>
-<p>To renew your Let's Encrypt wildcard cert, run the following command, replacing <code>example.com</code> with your domain and <code>admin@example.com</code> with your email:</p>
-<div class="codehilite"><pre><span></span><code>sudo certbot certonly --manual -d *.example.com --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns -m admin@example.com --no-eff-email
-</code></pre></div>
-
-<p>Same instructions as during install for <a href="../install_server/#deploy-the-txt-record-in-your-dns-manager">verifying the TXT record</a> has propogated before hitting Enter.</p>
-<p>After this you have renewed the cert, simply run the <code>update.sh</code> script, passing it the <code>--force</code> flag.</p>
-<div class="codehilite"><pre><span></span><code>./update.sh --force
-</code></pre></div>
+                <h1 id="code-signing">Code Signing<a class="headerlink" href="#code-signing" title="Permanent link">&para;</a></h1>
+<p><em>Version added: Tactical RMM v0.6.0 / Agent v1.5.0</em></p>
+<p>Tactical RMM agents are now <a href="https://comodosslstore.com/resources/what-is-microsoft-authenticode-code-signing-certificate/">code signed</a>!</p>
+<p>To get access to code signed agents, you must be a <a href="https://github.com/sponsors/wh1te909">Github Sponsor</a> with a minumum monthly donation of $50.00</p>
+<p>Once you have become a sponsor, please email <strong>support@amidaware.com</strong> with your Github username (and Discord username if you're on our <a href="https://discord.gg/upGTkWp">Discord</a>)</p>
+<p>Please allow up to 24 hours for a response</p>
+<p>You will then be sent a code signing auth token, which you should enter into Tactical's web UI from <em>Settings &gt; Code Signing</em></p>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
+<p>Everytime you generate an agent or an agent does a self-update, your self-hosted instance sends a request to Tactical's code signing servers with your auth token.</p>
+<p>If the token is valid, the server sends you back a code signed agent. If not, it sends you back the un-signed agent.</p>
+<p>If you think your auth token has been compromised or stolen then please email support or contact wh1te909 on discord to get a new token / invalidate the old one.</p>
                 
               
               
@@ -827,7 +759,7 @@ The update script will also fix any permissions that might have gotten messed up
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../install_agent/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../sponsor/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -836,19 +768,19 @@ The update script will also fix any permissions that might have gotten messed up
               <span class="md-footer__direction">
                 Previous
               </span>
-              Agent Installation
+              Sponsor
             </div>
           </div>
         </a>
       
       
-        <a href="../update_docker/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../install_server/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Updating the RMM (Docker)
+              Traditional Install
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -18,7 +18,7 @@
     
     
       
-        <title>Updating the RMM - Tactical RMM Documentation</title>
+        <title>Contributing to Community Scripts - Tactical RMM Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#updating-the-rmm" class="md-skip">
+        <a href="#script-library-naming-conventions" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Updating the RMM
+              Contributing to Community Scripts
             
           </span>
         </div>
@@ -315,14 +315,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       <label class="md-nav__link" for="__nav_6">
         Updating
@@ -338,63 +336,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Updating the RMM
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../update_server/" class="md-nav__link">
         Updating the RMM
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#keeping-your-linux-server-up-to-date" class="md-nav__link">
-    Keeping your linux server up to date
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#updating-to-the-latest-rmm-version" class="md-nav__link">
-    Updating to the latest RMM version
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#keeping-your-lets-encrypt-certificate-up-to-date" class="md-nav__link">
-    Keeping your Let's Encrypt certificate up to date
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -627,12 +573,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" checked>
       
       <label class="md-nav__link" for="__nav_14">
         Contributing
@@ -672,11 +620,99 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../contributing_community_scripts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Contributing to Community Scripts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Contributing to Community Scripts
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#script-library-naming-conventions" class="md-nav__link">
+    Script Library Naming Conventions
+  </a>
+  
+    <nav class="md-nav" aria-label="Script Library Naming Conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-names" class="md-nav__link">
+    File names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-field-in-community_scriptsjson" class="md-nav__link">
+    Name field (in community_scripts.json)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-script-files" class="md-nav__link">
+    Making Script Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Making Script Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#good-habits" class="md-nav__link">
+    Good Habits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-habits" class="md-nav__link">
+    Bad Habits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-reference-script-examples" class="md-nav__link">
+    Useful Reference Script Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -717,8 +753,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -727,22 +761,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#keeping-your-linux-server-up-to-date" class="md-nav__link">
-    Keeping your linux server up to date
+  <a href="#script-library-naming-conventions" class="md-nav__link">
+    Script Library Naming Conventions
   </a>
+  
+    <nav class="md-nav" aria-label="Script Library Naming Conventions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-names" class="md-nav__link">
+    File names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-field-in-community_scriptsjson" class="md-nav__link">
+    Name field (in community_scripts.json)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating-to-the-latest-rmm-version" class="md-nav__link">
-    Updating to the latest RMM version
+  <a href="#making-script-files" class="md-nav__link">
+    Making Script Files
   </a>
+  
+    <nav class="md-nav" aria-label="Making Script Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#good-habits" class="md-nav__link">
+    Good Habits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bad-habits" class="md-nav__link">
+    Bad Habits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#keeping-your-lets-encrypt-certificate-up-to-date" class="md-nav__link">
-    Keeping your Let's Encrypt certificate up to date
+  <a href="#useful-reference-script-examples" class="md-nav__link">
+    Useful Reference Script Examples
   </a>
   
 </li>
@@ -760,55 +834,102 @@
               
                 
                 
-                <h1 id="updating-the-rmm">Updating the RMM<a class="headerlink" href="#updating-the-rmm" title="Permanent link">&para;</a></h1>
-<h4 id="keeping-your-linux-server-up-to-date">Keeping your linux server up to date<a class="headerlink" href="#keeping-your-linux-server-up-to-date" title="Permanent link">&para;</a></h4>
-<p>You should periodically run <code>sudo apt update</code> and <code>sudo apt -y upgrade</code> to keep your server up to date.</p>
-<p>Other than this, you should avoid making any changes to your server and let the <code>update.sh</code> script handle everything else for you.</p>
-<h4 id="updating-to-the-latest-rmm-version">Updating to the latest RMM version<a class="headerlink" href="#updating-to-the-latest-rmm-version" title="Permanent link">&para;</a></h4>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>Do <strong>not</strong> attempt to manually edit the update script or any configuration files unless specifically told to by one of the developers.<br/><br/>
-Since this software is completely self hosted and we have no access to your server, we have to assume you have not made any config changes to any of the files or services on your server, and the update script will assume this.<br/><br/>
-You should also <strong>never</strong> attempt to automate running the update script via cron.<br/><br/>
-The update script will update itself if needed to the latest version when you run it, and them prompt you to run it again.<br/><br/>
-Sometimes, manual intervention will be required during an update in the form of yes/no prompts, so attempting to automate this will ignore these prompts and cause your installation to break.</p>
-</div>
-<p>SSH into your server as the linux user you created during install.<br/><br/>
-<strong>Never</strong> run any update scripts or commands as the <code>root</code> user.<br/>This will mess up permissions and break your installation.<br/><br/>
-Download the update script and run it:<br/></p>
-<div class="codehilite"><pre><span></span><code>wget -N https://raw.githubusercontent.com/wh1te909/tacticalrmm/master/update.sh
-chmod +x update.sh
-./update.sh
+                  <h1>Contributing to Community Scripts</h1>
+                
+                <h2 id="script-library-naming-conventions">Script Library Naming Conventions<a class="headerlink" href="#script-library-naming-conventions" title="Permanent link">&para;</a></h2>
+<h3 id="file-names">File names<a class="headerlink" href="#file-names" title="Permanent link">&para;</a></h3>
+<p>Under <code>/scripts</code> should generally follow this format:</p>
+<div class="codehilite"><pre><span></span><code>(Platform)_(Category or Function)_(What It Does).xxx
 </code></pre></div>
 
-<p><br/></p>
-<p>If you are already on the latest version, the update script will notify you of this and return immediately.<br/><br/>
-You can pass the optional <code>--force</code> flag to the update script to forcefully run through an update, which will bypass the check for latest version.<br/></p>
-<div class="codehilite"><pre><span></span><code>./update.sh --force
-</code></pre></div>
-
-<p>This is usefull for a botched update that might have not completed fully.<br/><br/>
-The update script will also fix any permissions that might have gotten messed up during a botched update, or if you accidentally ran the update script as the <code>root</code> user.</p>
-<p><br/></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Do <strong>not</strong> attempt to manually update MeshCentral to a newer version.</p>
-<p>You should let the <code>update.sh</code> script handle this for you. </p>
-<p>The developers will test MeshCentral and make sure integration does not break before bumping the mesh version.</p>
-</div>
-<h4 id="keeping-your-lets-encrypt-certificate-up-to-date">Keeping your Let's Encrypt certificate up to date<a class="headerlink" href="#keeping-your-lets-encrypt-certificate-up-to-date" title="Permanent link">&para;</a></h4>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Currently, the update script does not automatically renew your Let's Encrypt wildcard certificate, which expires every 3 months, since this is non-trivial to automate using the DNS TXT record method.</p>
+<p>Although Tactical RMM only has a Windows agent for now, we're planning for future with script names</p>
 </div>
-<p>To renew your Let's Encrypt wildcard cert, run the following command, replacing <code>example.com</code> with your domain and <code>admin@example.com</code> with your email:</p>
-<div class="codehilite"><pre><span></span><code>sudo certbot certonly --manual -d *.example.com --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns -m admin@example.com --no-eff-email
+<p>Platform for now are</p>
+<div class="codehilite"><pre><span></span><code>Win
+OSX
+Linux
+iOS
+Android
 </code></pre></div>
 
-<p>Same instructions as during install for <a href="../install_server/#deploy-the-txt-record-in-your-dns-manager">verifying the TXT record</a> has propogated before hitting Enter.</p>
-<p>After this you have renewed the cert, simply run the <code>update.sh</code> script, passing it the <code>--force</code> flag.</p>
-<div class="codehilite"><pre><span></span><code>./update.sh --force
+<p>Good filename examples include:</p>
+<div class="codehilite"><pre><span></span><code>Win_Azure_Mars_Cloud_Backup_Status.ps1
+Win_AzureAD_Check_Connection_Status.ps1
+Win_Network_DHCP_Set.bat
+Win_Network_DNS_Set_to_1.1.1.2.ps1
 </code></pre></div>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This is so that at a glance you can see if there is already a script with that function, and you can avoid duplication of functionality. If you can improve a script or allow Script Arguments/Parameters update existing if possible</p>
+</div>
+<h3 id="name-field-in-community_scriptsjson">Name field (in community_scripts.json)<a class="headerlink" href="#name-field-in-community_scriptsjson" title="Permanent link">&para;</a></h3>
+<p>Consider they are viewed in 3 different locations:</p>
+<p>Script Manager</p>
+<ul>
+<li>
+<p>List View (sortable by any column)</p>
+</li>
+<li>
+<p>Folder View (Grouped by Categories)</p>
+</li>
+</ul>
+<p>Run or Add script </p>
+<ul>
+<li>Running scripts manually or adding tasks (or adding in Automation Manager)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>A good max length is 50-60 chars or less for display in these 3 locations</p>
+</div>
+<p>Make sure your Name roughly follows the order of file naming as above</p>
+<div class="codehilite"><pre><span></span><code>Category or Function - What It Does
+</code></pre></div>
+
+<p>Consider how the alphabetic sort will affect display</p>
+<p><img alt="json_name_examples" src="../images/community_scripts_name_field_example1.png" /></p>
+<h2 id="making-script-files">Making Script Files<a class="headerlink" href="#making-script-files" title="Permanent link">&para;</a></h2>
+<h3 id="good-habits">Good Habits<a class="headerlink" href="#good-habits" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Try and make them fully self-contained. </p>
+</li>
+<li>
+<p>If they pull data from elsewhere, create comment notes at the top with references for others to audit/validate</p>
+</li>
+<li>
+<p>Good folder locations</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>c:\ProgramData\TacticalRMM\
+c:\ProgramData\TacticalRMM\scripts
+c:\ProgramData\TacticalRMM\toolbox
+c:\ProgramData\TacticalRMM\logs
+c:\ProgramData\TacticalRMM\temp
+c:\ProgramData\TacticalRMM\
+</code></pre></div>
+
+<ul>
+<li>Command Parameters are good. Optional command parameters for extra functions are better</li>
+</ul>
+<h3 id="bad-habits">Bad Habits<a class="headerlink" href="#bad-habits" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Assumes non-standard configurations</p>
+</li>
+<li>
+<p>Doesn't play well with other community scripts (reused names etc.)</p>
+</li>
+</ul>
+<h2 id="useful-reference-script-examples">Useful Reference Script Examples<a class="headerlink" href="#useful-reference-script-examples" title="Permanent link">&para;</a></h2>
+<p>RunAsUser (since Tactical RMM runs as system)
+<a href="https://github.com/wh1te909/tacticalrmm/blob/develop/scripts/Win_Display_Message_To_User.ps1">https://github.com/wh1te909/tacticalrmm/blob/develop/scripts/Win_Display_Message_To_User.ps1</a></p>
+<p>Command Paramater Ninja
+<a href="https://github.com/wh1te909/tacticalrmm/blob/develop/scripts/Win_ScreenConnectAIO.ps1">https://github.com/wh1te909/tacticalrmm/blob/develop/scripts/Win_ScreenConnectAIO.ps1</a></p>
+<p>Optional Command Parameters and testing for errors
+<a href="https://github.com/wh1te909/tacticalrmm/blob/develop/scripts/Win_Rename_Computer.ps1">https://github.com/wh1te909/tacticalrmm/blob/develop/scripts/Win_Rename_Computer.ps1</a></p>
                 
               
               
@@ -827,7 +948,7 @@ The update script will also fix any permissions that might have gotten messed up
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../install_agent/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../contributing_using_vscode/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -836,19 +957,19 @@ The update script will also fix any permissions that might have gotten messed up
               <span class="md-footer__direction">
                 Previous
               </span>
-              Agent Installation
+              Contributing using VSCode
             </div>
           </div>
         </a>
       
       
-        <a href="../update_docker/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../license/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Updating the RMM (Docker)
+              License
             </div>
           </div>
           <div class="md-footer__button md-icon">
